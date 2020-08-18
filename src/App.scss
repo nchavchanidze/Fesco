@@ -1,7 +1,12 @@
 //Partials
 @import './assets/scss/Partials/reset';
+@import './assets//scss/Partials/fonts';
 
 //Modules
 @import './assets/scss/Modules/base';
 @import './assets/scss/Modules/variables';
 @import './assets/scss/Modules/media';
+
+//Components
+@import './assets/scss/Components/header';
+@import './assets/scss/Components/home';

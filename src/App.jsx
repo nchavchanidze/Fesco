@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from 'react-bootstrap'
+import Home from './components/Home';
 import './App.scss';
 
 class App extends React.Component {
@@ -12,10 +12,8 @@ class App extends React.Component {
   }
   render() {
     return (
-      <div className="app">
-        <Container>
-          <p>{this.state.title} - {this.state.welcome}</p>
-        </Container>
+      <div>
+        <Home />
       </div>
     )
   }

@@ -1,0 +1,29 @@
+#home {
+    background-color: rgb(65, 65, 65);
+    height: 100vh;
+}
+.home-container {
+    height: 100vh;
+}
+.HomeTextContainer {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    h1 {
+        font-family: "Yesteryear", cursive;
+        font-size: 55.7px;
+        color: #bf9e7b;
+    }
+    h2 {
+        font-family: "Vollkorn", serif;
+        font-size: 20px;
+        color: #fff;
+
+    }
+    p {
+        font-family: "Vollkorn", serif;
+        font-size: 15px;
+        color: #000;
+    }
+}
