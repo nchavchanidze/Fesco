@@ -1,5 +1,6 @@
 import React from 'react';
 import Home from './components/Home';
+import About from './components/About';
 import './App.scss';
 
 class App extends React.Component {
@@ -14,6 +15,7 @@ class App extends React.Component {
     return (
       <div>
         <Home />
+        <About />
       </div>
     )
   }
