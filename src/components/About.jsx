@@ -12,7 +12,7 @@ class About extends React.Component {
     }
     render() {
         return (
-            <Container id="about">
+            <Container className="pb-5" id="about">
                 <h1 className="mt-5">{this.state.title}</h1>
                 <h2>{this.state.subtitle}</h2>
                 <Row className="mt-5">

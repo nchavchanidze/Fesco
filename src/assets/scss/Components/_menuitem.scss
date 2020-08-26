@@ -1,0 +1,21 @@
+#MenuItem {
+    width: 50%;
+    .menu-item-info {
+        width: 50%;
+        h3 {
+            font-family: "Raleway", sans-serif;
+            font-size: 15px;
+            color: #ffffff;
+        }
+        p {
+            font-family: "Vollkorn", serif;
+            font-size: 13px;
+            color: #fff;
+        }
+    }
+    .menu-item-price {
+        font-family: "Raleway", sans-serif;
+        font-size: 34.23px;
+        color: #bf9e7b;
+    }
+}
