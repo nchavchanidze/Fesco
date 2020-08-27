@@ -1,21 +1,23 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap'
+import aboutImg from '../assets/img/about/about-img.jpg'
 import '../App.scss';
 
 class About extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            title: "About Us",
-            subtitle: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae."
+            title: "ჩვენს შესახებ",
+            subtitle: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.",
+            image: aboutImg
         }
     }
     render() {
         return (
-            <Container className="pb-5" id="about">
-                <h1 className="mt-5">{this.state.title}</h1>
+            <Container className="pb-5 pt-5" id="about">
+                <h1>{this.state.title}</h1>
                 <h2>{this.state.subtitle}</h2>
-                <Row className="mt-5">
+                <Row className="mt-5 flex-wrap align-items-center">
                     <Col md={6} sm={12}>
                         <p className="about-text">
                             Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
@@ -29,7 +31,8 @@ class About extends React.Component {
                             Vivamus magna justo, lacinia eget consectetur sed, dictum porta.
                         </p>
                     </Col>
-                    <Col md={6}>
+                    <Col md={6} className="mt-5">
+                        <img src={this.state.image} alt={this.state.title}/>
                     </Col>
                 </Row>
             </Container>

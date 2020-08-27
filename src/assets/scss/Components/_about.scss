@@ -1,12 +1,12 @@
 #about {
     h1 {
-        font-family: "Yesteryear", cursive;
+        font-family: $font04;
         font-size: 55.7px;
         color: #bf9e7b;
         text-align: center;
     }
     h2 {
-        font-family: 'Raleway', sans-serif;
+        font-family: $font03;
         font-size: 15px;
         color: #808080;
         text-align: center;
@@ -17,7 +17,7 @@
 
     }
     .about-text {
-        font-family: 'Raleway', sans-serif;
+        font-family: $font03;
         font-size: 15px;
         color: #808080;
         text-align: center;

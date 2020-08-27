@@ -4,7 +4,7 @@ import '../App.scss';
 function MenuItem(props) {
 
     return (
-        <div id="MenuItem">
+        <div id="MenuItem" className="m-auto">
             <div className="d-flex justify-content-between align-items-center flex-wrap mt-3">
                 <div className="menu-item-info">
 

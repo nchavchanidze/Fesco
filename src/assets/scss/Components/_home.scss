@@ -1,5 +1,9 @@
 #home {
     background-color: rgb(65, 65, 65);
+    background-image: url(../../img/home/home-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 100vh;
 }
 .home-container {
@@ -11,19 +15,14 @@
     left: 0;
     transform: translateY(-50%);
     h1 {
-        font-family: "Yesteryear", cursive;
+        font-family: $font04;
         font-size: 55.7px;
         color: #bf9e7b;
     }
     h2 {
-        font-family: "Vollkorn", serif;
+        font-family: $font04;
         font-size: 20px;
         color: #fff;
 
-    }
-    p {
-        font-family: "Vollkorn", serif;
-        font-size: 15px;
-        color: #000;
     }
 }

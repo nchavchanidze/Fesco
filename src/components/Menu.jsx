@@ -1,58 +1,45 @@
 import React from 'react';
 import { Container } from 'react-bootstrap'
-import MenuItem from './MenuItem';
+import Slider from "react-slick";
+import MenuMeat from './Menu/MeatMenu/MenuMeat';
+import MenuVegetable from './Menu/VegetableMenu/MenuVegetable';
 import '../App.scss';
 
 class Menu extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            title: "Our Menu",
-            subtitle: "Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.",
-            title1: ".......... PIZZA ..........",
-            menu: [
-                {
-                    id: 0,
-                    name: "MEXICANA",
-                    description: "Donec velit neque, auctor sit amet aliquam vel ullamcorper sit amet ligula.............................",
-                    price: "1.90₾"
-                },
-                {
-                    id: 1,
-                  name: "MEXICANA",
-                    description: "Donec velit neque, auctor sit amet aliquam vel ullamcorper sit amet ligula.............................",
-                    price: "1.90₾"
-                },
-                {
-                    id: 2,
-                    name: "MEXICANA",
-                    description: "Donec velit neque, auctor sit amet aliquam vel ullamcorper sit amet ligula.............................",
-                    price: "1.90₾"
-                },
-                {
-                    id: 3,
-                    name: "MEXICANA",
-                    description: "Donec velit neque, auctor sit amet aliquam vel ullamcorper sit amet ligula.............................",
-                    price: "1.90₾"
-                }
-            ]
+            title: "მენიუ",
+            subtitle: "Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula."
         }
     }
 
-    makeItems = (menu) => {
-        return this.state.menu.map(item => {
-            return <MenuItem item={item} key={item.id} name={item.name} />
-        })
-    }
-
     render() {
+        const settings = {
+            dots: true,
+            infinite: true,
+            fade: true,
+            autoplay: false,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        };
         return (
             <Container className="pt-5" fluid={true} id="menu">
                 <h1>{this.state.title}</h1>
                 <h2>{this.state.subtitle}</h2>
                 <Container>
                     <h1 className="menu-title mt-5 mb-5">{this.state.title1}</h1>
-                    {this.makeItems(this.state.items)}
+                    <div>
+                        <Slider {...settings}>
+                            <div>
+                                <MenuMeat />
+                            </div>
+                            <div>
+                                <MenuVegetable />
+                            </div>
+                        </Slider>
+                    </div>
                 </Container>
             </Container>
         )

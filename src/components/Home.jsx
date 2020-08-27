@@ -7,9 +7,8 @@ class Home extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            mainText: "Making Food Taste Better.",
-            descriptionText: "Italian Specialities",
-            secondText: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae"
+            mainText: "კაფეტერია ტარტანი",
+            descriptionText: "- ადგილი, სადაც ორიენტაცია ხდება ჯანსაღ პროდუქტზე, ხარისხსა და გემოზე.",
 
         }
     }
@@ -21,7 +20,6 @@ class Home extends React.Component {
                     <div className="HomeTextContainer">
                         <h1>{this.state.mainText}</h1>
                         <h2>{this.state.descriptionText}</h2>
-                        <p className="mt-5">{this.state.secondText}</p>
                     </div>
                 </Container>
             </div>

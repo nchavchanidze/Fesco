@@ -170,6 +170,7 @@ textarea {
 
 img {
   display: block;
+  width: 100%;
 }
 h4 {
   font-weight: unset !important;
@@ -179,4 +180,7 @@ a:hover,
 a:focus,
 a:active {
   text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
 }

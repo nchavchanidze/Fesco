@@ -6,11 +6,12 @@ class Header extends React.Component {
     constructor(props) {
         super(props); 
         this.state = {
-            logo: "Fesco",
-            home: "Home",
-            about:"About Us",
-            menu: "Menu",
-            contact:"Contact"
+            logo: "Tartan",
+            home: "მთავარი",
+            about:"ჩვენს შესახებ",
+            menu: "მენიუ",
+            gallery: "გალერეა",
+            contact: "კონტაქტი"
         }
     }
   render() {
@@ -23,10 +24,11 @@ class Header extends React.Component {
               </Navbar.Toggle>
               <Navbar.Collapse id="navbar-toggle">
                 <Nav className="ml-auto">
-                  <Nav.Link className="nav-link" href="#">{this.state.home}</Nav.Link>
-                  <Nav.Link className="nav-link" href="#">{this.state.about}</Nav.Link>
-                  <Nav.Link className="nav-link" href="#">{this.state.menu}</Nav.Link>
-                  <Nav.Link className="nav-link" href="#">{this.state.contact}</Nav.Link>
+                  <Nav.Link className="nav-link p-1" href="#home">{this.state.home}</Nav.Link>
+                  <Nav.Link className="nav-link p-1" href="#about">{this.state.about}</Nav.Link>
+                  <Nav.Link className="nav-link p-1" href="#menu">{this.state.menu}</Nav.Link>
+                  <Nav.Link className="nav-link p-1" href="#">{this.state.gallery}</Nav.Link>
+                  <Nav.Link className="nav-link p-1" href="#">{this.state.contact}</Nav.Link>
                 </Nav>
               </Navbar.Collapse>
             </Navbar>
