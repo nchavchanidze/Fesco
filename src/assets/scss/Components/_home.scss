@@ -1,10 +1,14 @@
 #home {
     background-color: rgb(65, 65, 65);
-    background-image: url(../../img/home/home-bg.jpg);
+    background-image: url(../../img/home/test.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
+    .bg-layer {
+        background-color: rgba(0, 0, 0, 0.7);
+        height: 100vh;
+        }
 }
 .home-container {
     height: 100vh;
@@ -17,12 +21,11 @@
     h1 {
         font-family: $font04;
         font-size: 55.7px;
-        color: #bf9e7b;
+        color: $color01;
     }
     h2 {
         font-family: $font04;
         font-size: 20px;
         color: #fff;
-
     }
 }

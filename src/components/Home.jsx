@@ -14,14 +14,16 @@ class Home extends React.Component {
     }
     render() {
         return (
-            <div id="home" >
+            <div id="home">
+                <div className="bg-layer">
                     <Header />
-                <Container className="home-container position-relative">
-                    <div className="HomeTextContainer">
-                        <h1>{this.state.mainText}</h1>
-                        <h2>{this.state.descriptionText}</h2>
-                    </div>
-                </Container>
+                    <Container className="home-container position-relative">
+                        <div className="HomeTextContainer">
+                            <h1>{this.state.mainText}</h1>
+                            <h2>{this.state.descriptionText}</h2>
+                        </div>
+                    </Container>
+                </div>
             </div>
         )
     }

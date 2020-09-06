@@ -2,9 +2,9 @@
     border-bottom: 1px solid #ffffff;
 }
 .header-logo {
-    font-family: $font01;
+    font-family: $font06;
     font-size: 36.91px !important;
-    color: #ffffff !important;
+    color: $color01 !important;
 }
 .nav-link {
     color: #ffffff !important;
@@ -16,7 +16,7 @@
     z-index: 1;
     transition: all .5s;
     &:hover {
-        color: #000 !important;
+        color: #ffffff !important;
         transition: all .5s;
     }
     &::after {
@@ -31,7 +31,7 @@
         height: 1px;
         content: ".";
         color: transparent;
-        background: #ffffff;
+        background: $color01;
         visibility: none;
         opacity: 0;
         z-index: -1;
