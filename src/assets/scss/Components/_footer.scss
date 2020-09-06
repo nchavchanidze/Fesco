@@ -1,0 +1,21 @@
+#footer {
+    background-color: $color02;
+    h3 {
+        color: #fff;
+    }
+    p {
+        color: #fff;
+        margin-bottom: 0;
+    }
+    button {
+        background-color: transparent;
+        border: 1px solid $color01;
+        padding: 5px 15px;
+        color: #fff;
+        transition: .3s;
+        &:hover {
+            background-color: $color01;
+            transition: .3s;
+        }
+    }
+}

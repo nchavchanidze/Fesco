@@ -4,11 +4,11 @@ import '../../../App.scss';
 import FirstList from './FirstList';
 import SecondList from './SecondList';
 
-class MenuVegetable extends React.Component {
+class MenuSalad extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            title1: ".......... ბოსტნეულის კერძები ..........",
+            title1: ".......... სალათები ..........",
         }
     }
 
@@ -25,4 +25,4 @@ class MenuVegetable extends React.Component {
     }
 }
 
-export default MenuVegetable;
+export default MenuSalad;

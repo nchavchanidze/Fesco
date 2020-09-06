@@ -8,7 +8,7 @@ class Header extends React.Component {
     super(props);
     this.state = {
       logoHouse: TartanHouse,
-      logoText: "TARTAN",
+      logoText: "ტარტანი",
       home: "მთავარი",
       about: "ჩვენს შესახებ",
       menu: "მენიუ",
@@ -21,8 +21,11 @@ class Header extends React.Component {
       <header>
         <Container id="header" className="p-0">
           <Navbar className="navbar-dark d-flex justify-content-between align-items-center p-0" expand="lg">
-            <Navbar.Brand className="header-logo">
-              {this.state.logoText}
+            <Navbar.Brand className="header-logo d-flex align-items-baseline w-25">
+              <img className="w-25" src={this.state.logoHouse} alt={this.state.logoText} />
+              <h1>
+                {this.state.logoText}
+              </h1>
             </Navbar.Brand>
             <Navbar.Toggle className="border-0 p-0" aria-controls="navbar-toogle">
             </Navbar.Toggle>

@@ -2,6 +2,7 @@ import React from 'react';
 import { Container } from 'react-bootstrap'
 import Slider from "react-slick";
 import MenuMeat from './Menu/MeatMenu/MenuMeat';
+import MenuSalad from './Menu/SaladMenu/MenuSalad';
 import MenuVegetable from './Menu/VegetableMenu/MenuVegetable';
 import '../App.scss';
 
@@ -34,6 +35,9 @@ class Menu extends React.Component {
                         <Slider {...settings}>
                             <div>
                                 <MenuMeat />
+                            </div>
+                            <div>
+                                <MenuSalad />
                             </div>
                             <div>
                                 <MenuVegetable />

@@ -42,7 +42,7 @@ class FirstList extends React.Component {
                     id: 5,
                     name: "ქაბაბი (1 ცალი)",
                     description: "Kebab (1 piece)",
-                    price: "5.50 ₾"
+                    price: "6.00 ₾"
                 },
                 {
                     id: 6,
@@ -66,7 +66,7 @@ class FirstList extends React.Component {
                     id: 9,
                     name: "ხაში (1 პორცია)",
                     description: "Khashi (1 serving)",
-                    price: "7.00 ₾"
+                    price: "8.00 ₾"
                 },
                 {
                     id: 10,
@@ -78,13 +78,13 @@ class FirstList extends React.Component {
                     id: 11,
                     name: "ღორის ხორცის \"ბუჟენინა\"",
                     description: "Pork \"Buzhenina\"",
-                    price: "2.80 ₾"
+                    price: "3.80 ₾"
                 },
                 {
                     id: 12,
                     name: "საქონლის ხორცის სალათი",
                     description: "Beef salad",
-                    price: "2.70 ₾"
+                    price: "3.00 ₾"
                 }
             ]
         }

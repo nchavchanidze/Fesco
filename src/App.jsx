@@ -3,6 +3,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Menu from './components/Menu';
 import './App.scss';
+import Footer from './components/Footer';
 
 class App extends React.Component {
   constructor(props) {
@@ -18,6 +19,7 @@ class App extends React.Component {
         <Home />
         <About />
         <Menu />
+        <Footer />
       </div>
     )
   }
