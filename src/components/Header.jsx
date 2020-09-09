@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap'
-import TartanHouse from '../assets/img/tartan-house.svg'
+import TartanHouse from '../assets/img/test-logo.svg'
 import '../App.scss';
 
 class Header extends React.Component {
@@ -8,7 +8,7 @@ class Header extends React.Component {
     super(props);
     this.state = {
       logoHouse: TartanHouse,
-      logoText: "ტარტანი",
+      logoText: "TARTAN",
       home: "მთავარი",
       about: "ჩვენს შესახებ",
       menu: "მენიუ",
@@ -22,10 +22,10 @@ class Header extends React.Component {
         <Container id="header" className="p-0">
           <Navbar className="navbar-dark d-flex justify-content-between align-items-center p-0" expand="lg">
             <Navbar.Brand className="header-logo d-flex align-items-baseline w-25">
-              <img className="w-25" src={this.state.logoHouse} alt={this.state.logoText} />
-              <h1>
+              <img className="w-50" src={this.state.logoHouse} alt={this.state.logoText} />
+              {/* <h1>
                 {this.state.logoText}
-              </h1>
+              </h1> */}
             </Navbar.Brand>
             <Navbar.Toggle className="border-0 p-0" aria-controls="navbar-toogle">
             </Navbar.Toggle>

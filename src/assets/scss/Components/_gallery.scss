@@ -1,0 +1,39 @@
+#gallery {
+    h1 {
+        font-family: $font04;
+        font-size: 55.7px;
+        color: $color01;
+        text-align: center;
+    }
+    h2 {
+        font-family: $font03;
+        font-size: 15px;
+        color: #808080;
+        text-align: center;
+        width: 40%;
+        margin: 0 auto;
+        line-height: 2;
+    }
+    .about-text {
+        font-family: $font03;
+        font-size: 15px;
+        color: #808080;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        line-height: 2;
+    }
+    .gallery-img {
+        margin-top: 2rem;
+    }
+    .slick-next {
+        &::before {
+            color: $color01;
+        }
+    }
+    .slick-prev {
+        &::before {
+            color: $color01;
+        }
+    }
+}

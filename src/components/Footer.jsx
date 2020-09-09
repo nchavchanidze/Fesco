@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { fab, faFacebookF, faTwitter, faGooglePlusG, faInstagram} from '@fortawesome/free-brands-svg-icons'
+import { fab, faFacebookF, faTwitter, faGooglePlusG, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import '../App.scss';
 
@@ -37,23 +37,22 @@ class Footer extends React.Component {
     }
     render() {
         return (
-            <Container fluid={true} id='footer' className="">
+            <footer id='footer' className="">
                 <Container className="pb-3 pt-5">
                     <Row className="m-auto">
-                        <Col md={3}>
+                        <Col md={3} className="mt-3">
                             <h3>{this.state.address.title}</h3>
                             <p>{this.state.address.add1}</p>
                             <p>{this.state.address.add2}</p>
                             <button className="mt-4">view map</button>
-                            <p className="mt-5"> © 2020 - Tartan All Right Reserved</p>
                         </Col>
-                        <Col md={5} offset={1}>
+                        <Col md={5} offset={1} className="mt-3">
                             <h3>{this.state.hours.title}</h3>
                             <p>{this.state.hours.timedate1}</p>
                             <p>{this.state.hours.timedate2}</p>
                             <button className="mt-4">Table Reservation</button>
                         </Col>
-                        <Col md={3} offset={1}>
+                        <Col md={3} offset={1} className="mt-3">
                             <h3>{this.state.socials.title}</h3>
                             <p className="mt-2">{this.state.socials.description}</p>
                             <div className="mt-4 d-flex justify-content-between align-items center">
@@ -72,8 +71,9 @@ class Footer extends React.Component {
                             </div>
                         </Col>
                     </Row>
+                    <p className="mt-5">© 2020 - Tartan All Right Reserved</p>
                 </Container>
-            </Container>
+            </footer>
         )
     }
 }
