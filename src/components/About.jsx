@@ -1,6 +1,7 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap'
 import aboutImg from '../assets/img/menu/test3.jpg'
+import Aos from 'aos';
 import '../App.scss';
 
 class About extends React.Component {
@@ -12,9 +13,14 @@ class About extends React.Component {
             image: aboutImg
         }
     }
+    componentDidMount() {
+        Aos.init({
+            duration: 1000
+        })
+    }
     render() {
         return (
-            <Container className="pb-5 pt-5" id="about">
+            <Container className="pb-5 pt-5" id="about" data-aos="fade-up">
                 <h1>{this.state.title}</h1>
                 <h2>{this.state.subtitle}</h2>
                 <Row className="mt-5 flex-wrap align-items-center">

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Nav, Navbar, Dropdown } from 'react-bootstrap'
+import { Container, Nav, Navbar } from 'react-bootstrap'
 import TartanHouse from '../assets/img/tartan-house-3.svg'
 import '../App.scss';
 
@@ -26,49 +26,45 @@ class Header extends React.Component {
   componentDidMount() {
     window.addEventListener('scroll', () => {
       const isTop = window.scrollY < 100;
+      const homeScroll = window.scrollY < 0;
+      const aboutScroll = window.scrollY < 500;
+      const menuScroll = window.scrollY < 2000;
+      const galleryScroll = window.scrollY < 5500;
+      const contactScroll = window.scrollY < 6000;
+      //Header
       if (isTop !== true) {
         this.setState({ scrolled: true });
       } else {
         this.setState({ scrolled: false });
       }
-    })
-    window.addEventListener('scroll', () => {
-      const homeScroll = window.scrollY < 0;
+      //Home
       if (homeScroll !== true) {
         this.setState({ homeScroll: true });
       } else {
         this.setState({ homeScroll: false });
       }
-    })
-    window.addEventListener('scroll', () => {
-      const aboutScroll = window.scrollY < 500;
+      //About
       if (aboutScroll !== true) {
         this.setState({ aboutScroll: true });
         this.setState({ homeScroll: false })
       } else {
         this.setState({ aboutScroll: false });
       }
-    })
-    window.addEventListener('scroll', () => {
-      const menuScroll = window.scrollY < 2000;
+      //Menu
       if (menuScroll !== true) {
         this.setState({ menuScroll: true });
         this.setState({ aboutScroll: false })
       } else {
         this.setState({ menuScroll: false });
       }
-    })
-    window.addEventListener('scroll', () => {
-      const galleryScroll = window.scrollY < 5900;
+      //Gallery
       if (galleryScroll !== true) {
         this.setState({ galleryScroll: true });
         this.setState({ menuScroll: false })
       } else {
         this.setState({ galleryScroll: false });
       }
-    })
-    window.addEventListener('scroll', () => {
-      const contactScroll = window.scrollY < 6700;
+      //Contact
       if (contactScroll !== true) {
         this.setState({ contactScroll: true });
         this.setState({ galleryScroll: false })

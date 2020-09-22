@@ -38,7 +38,7 @@ class Footer extends React.Component {
     }
     render() {
         return (
-            <footer id='footer' className="">
+            <footer id='footer'>
                 <Container className="pb-3 pt-5">
                     <Row className="m-auto">
                         <Col md={4} className="mt-3">

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap'
+import Aos from 'aos';
 import '../App.scss';
 
 class Home extends React.Component {
@@ -11,9 +12,14 @@ class Home extends React.Component {
 
         }
     }
+    componentDidMount() {
+        Aos.init({
+            duration: 1000
+        })
+    }
     render() {
         return (
-            <div id="home">
+            <div id="home" data-aos="zoom-in">
                 <div className="bg-layer">
                     <Container className="home-container position-relative">
                         <div className="HomeTextContainer">

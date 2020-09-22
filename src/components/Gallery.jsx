@@ -1,5 +1,6 @@
 import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap';
+import Aos from 'aos';
 import Slider from "react-slick";
 import test from '../assets/img/menu/test.jpg'
 import '../App.scss';
@@ -13,6 +14,11 @@ class Gallery extends React.Component {
             image: test
         }
     }
+    componentDidMount() {
+        Aos.init({
+            duration: 500
+        })
+    }
     render() {
         const settings = {
             dots: true,
@@ -24,7 +30,7 @@ class Gallery extends React.Component {
             slidesToScroll: 1
         };
         return (
-            <Container className="pb-5 pt-5" id="gallery">
+            <Container className="pb-5 pt-5" id="gallery" data-aos="fade-up">
                 <h1>{this.state.title}</h1>
                 <h2>{this.state.subtitle}</h2>
                 <Container>

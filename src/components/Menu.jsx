@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container } from 'react-bootstrap'
 import Slider from "react-slick";
+import Aos from 'aos';
 import MenuMeat from './Menu/MeatMenu/MenuMeat';
 import MenuSalad from './Menu/SaladMenu/MenuSalad';
 import MenuVegetable from './Menu/VegetableMenu/MenuVegetable';
@@ -18,6 +19,11 @@ class Menu extends React.Component {
             description: "* ფასები მოცემულია 100გ-ზე"
         }
     }
+    componentDidMount() {
+        Aos.init({
+            duration: 500
+        })
+    }
 
     render() {
         const settings = {
@@ -30,7 +36,7 @@ class Menu extends React.Component {
             slidesToScroll: 1
         };
         return (
-            <Container className="pt-5 pb-5" fluid={true} id="menu">
+            <Container className="pt-5 pb-5" fluid={true} id="menu" data-aos="fade-up">
                 <h1>{this.state.title}</h1>
                 <h2>{this.state.subtitle}</h2>
                 <Container>
