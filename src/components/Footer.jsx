@@ -1,11 +1,12 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { fab, faFacebookF, faTwitter, faGooglePlusG, faInstagram } from '@fortawesome/free-brands-svg-icons'
-import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { fas, faMapMarkerAlt, faClock, faPhone, faMapMarkedAlt } from '@fortawesome/free-solid-svg-icons';
+import { fab, faFacebookF, faTwitter, faGooglePlusG, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { library } from '@fortawesome/fontawesome-svg-core';
 import '../App.scss';
 
-library.add(fab, faFacebookF, faTwitter, faGooglePlusG, faInstagram)
+library.add(fab, faFacebookF, faTwitter, faGooglePlusG, faInstagram, fas, faMapMarkerAlt, faClock, faPhone, faMapMarkedAlt)
 
 const iconStyle = {
     color: '#fff',
@@ -18,20 +19,20 @@ class Footer extends React.Component {
         this.state = {
             address:
             {
-                title: 'ADDRESS:',
-                add1: "17 Awesome Street, Belgrade",
-                add2: "SR 877900"
+                title: 'მისამართი:',
+                add1: "ერეკლე ტატიშვილის ქუჩა 17, თბილისი",
+                map: "რუკა",
+                mapLink: "https://goo.gl/maps/WsbxF61H3kA6yV3A9"
             },
             hours:
             {
-                title: 'OPENING HOURS:',
-                timedate1: 'Monday - Friday......................................8:00am - 11:00 pm',
-                timedate2: 'Saturday - Sunday......................................8:00am - 11:00 pm'
+                title: 'სამუშაო საათები:',
+                timedate1: 'ორშაბათი-კვირა: 9:00 - 22:00',
+                phone: "+995 568 16 77 16",
             },
             socials:
             {
-                title: 'WE ARE SOCIAL',
-                description: 'Feel free to check our social media pages'
+                title: 'სოციალური ქსელები:',
             }
         }
     }
@@ -40,38 +41,64 @@ class Footer extends React.Component {
             <footer id='footer' className="">
                 <Container className="pb-3 pt-5">
                     <Row className="m-auto">
-                        <Col md={3} className="mt-3">
+                        <Col md={4} className="mt-3">
                             <h3>{this.state.address.title}</h3>
-                            <p>{this.state.address.add1}</p>
-                            <p>{this.state.address.add2}</p>
-                            <button className="mt-4">view map</button>
+                            <p className="mb-2">
+                                <FontAwesomeIcon className="mr-2" style={iconStyle} icon={['fas', 'map-marker-alt']} />
+                                {this.state.address.add1}
+                            </p>
+                            <p className="mb-2">
+                                <FontAwesomeIcon className="mr-2" style={iconStyle} icon={['fas', 'clock']} />
+                                {this.state.hours.timedate1}
+                            </p>
+                            <p className="mb-2">
+                                <FontAwesomeIcon className="mr-2" style={iconStyle} icon={['fas', 'phone']} />
+                                {this.state.hours.phone}
+                            </p>
+                            <a className="map-btn" href={this.state.address.mapLink} target="_blank" rel="noopener noreferrer">
+                                <FontAwesomeIcon className="mr-2" style={iconStyle} icon={['fas', 'map-marked-alt']} />
+                                {this.state.address.map}
+                            </a>
                         </Col>
-                        <Col md={5} offset={1} className="mt-3">
-                            <h3>{this.state.hours.title}</h3>
-                            <p>{this.state.hours.timedate1}</p>
-                            <p>{this.state.hours.timedate2}</p>
-                            <button className="mt-4">Table Reservation</button>
+                        <Col md={4} className="mt-3 footer-links">
+                            <h3>ლინკები:</h3>
+                            <p className="mb-2">
+                                <a href="#home">მთავარი</a>
+                            </p>
+                            <p className="mb-2">
+                                <a href="#home">ჩვენს შესახებ</a>
+                            </p>
+                            <p className="mb-2">
+                                <a href="#home">მენიუ</a>
+                            </p>
+                            <p className="mb-2">
+                                <a href="#home">გალერეა</a>
+                            </p>
                         </Col>
-                        <Col md={3} offset={1} className="mt-3">
+                        {/* <Col md={5} offset={1} className="mt-3">
+                            <a  href="#" target="_blank" rel="noopener noreferrer">Table Reservation</a>
+                        </Col> */}
+                        <Col md={{ span: 4 }} className="mt-3">
                             <h3>{this.state.socials.title}</h3>
-                            <p className="mt-2">{this.state.socials.description}</p>
-                            <div className="mt-4 d-flex justify-content-between align-items center">
-                                <button>
-                                    <FontAwesomeIcon style={iconStyle} icon={['fab', 'facebook-f']} />
-                                </button>
-                                <button>
-                                    <FontAwesomeIcon style={iconStyle} icon={['fab', 'twitter']} />
-                                </button>
-                                <button>
-                                    <FontAwesomeIcon style={iconStyle} icon={['fab', 'google-plus-g']} />
-                                </button>
-                                <button>
-                                    <FontAwesomeIcon style={iconStyle} icon={['fab', 'instagram']} />
-                                </button>
+                            <div className="w-75 d-flex justify-content-between align-items center">
+                                <a href="/#" target="_blank" rel="noopener noreferrer">
+                                    <FontAwesomeIcon style={iconStyle} className="footer-icons" icon={['fab', 'facebook-f']} />
+                                </a>
+                                <a href="/#" target="_blank" rel="noopener noreferrer">
+                                    <FontAwesomeIcon style={iconStyle} className="footer-icons" icon={['fab', 'twitter']} />
+                                </a>
+                                <a href="/#" target="_blank" rel="noopener noreferrer">
+                                    <FontAwesomeIcon style={iconStyle} className="footer-icons" icon={['fab', 'google-plus-g']} />
+                                </a>
+                                <a href="/#" target="_blank" rel="noopener noreferrer">
+                                    <FontAwesomeIcon style={iconStyle} className="footer-icons" icon={['fab', 'instagram']} />
+                                </a>
                             </div>
                         </Col>
                     </Row>
-                    <p className="mt-5">© 2020 - Tartan All Right Reserved</p>
+                    <div className="text-center">
+                        <p className="mt-5">© 2020 - ტარტანი. ყველა უფლება დაცულია</p>
+                    </div>
                 </Container>
             </footer>
         )

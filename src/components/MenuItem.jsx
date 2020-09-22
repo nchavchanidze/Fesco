@@ -2,6 +2,7 @@ import React from 'react';
 import Zoom from 'react-medium-image-zoom'
 import '../App.scss';
 
+
 function MenuItem(props) {
 
     return (

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap'
 import '../App.scss';
-import Header from './Header';
 
 class Home extends React.Component {
     constructor(props) {
@@ -16,7 +15,6 @@ class Home extends React.Component {
         return (
             <div id="home">
                 <div className="bg-layer">
-                    <Header />
                     <Container className="home-container position-relative">
                         <div className="HomeTextContainer">
                             <h1>{this.state.mainText}</h1>

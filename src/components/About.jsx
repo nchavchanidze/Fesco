@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap'
-import aboutImg from '../assets/img/about/about-img.jpg'
+import aboutImg from '../assets/img/menu/test3.jpg'
 import '../App.scss';
 
 class About extends React.Component {

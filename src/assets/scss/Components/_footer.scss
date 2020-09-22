@@ -2,20 +2,39 @@
     background-color: $color02;
     h3 {
         color: #fff;
+        font-family: $font04;
     }
     p {
         color: #fff;
         margin-bottom: 0;
+        font-family: $font04;
     }
-    button {
+    .footer-icons {
+        transition: .5s;
+    }
+    a {
         background-color: transparent;
-        border: 1px solid $color01;
-        padding: 5px 15px;
+        // border: 1px solid $color01;
         color: #fff;
-        transition: .3s;
+        transition: 0.3s;
         &:hover {
-            background-color: $color01;
-            transition: .3s;
+            color: $color01;
+            transition: 0.3s;
+            text-decoration: none;
+            .footer-icons {
+                color: $color01 !important;
+                transition: .5s;
+            }
+        }
+        
+    }
+
+    .map-btn {
+        font-family: $font04;
+        &:hover {
+            svg {
+                color: $color01 !important;
+            }
         }
     }
 }

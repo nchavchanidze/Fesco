@@ -1,0 +1,60 @@
+.loader-svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50%;
+    width: 50%;
+}
+.loader-text {
+    position: absolute;
+    top: 76%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "BPG Nino Mtavruli", sans-serif;
+    color: #e3272c;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0.2;
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.2;
+    }
+}
+
+.loader-text span {
+    animation-name: blink;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+.loader-text span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.loader-text span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+#Path_8,
+#Path_9,
+#Path_10 {
+    animation-name: blink;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+#Path_9 {
+    animation-delay: 0.2s;
+}
+
+#Path_10 {
+    animation-delay: 0.4s;
+}

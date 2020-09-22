@@ -29,3 +29,58 @@
         }
     }
 }
+
+.popup-content {
+    width: 100% !important;
+    height: 100%;
+    border: none !important;
+    .modal {
+        display: initial;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        .menu-item-bg-layer {
+            background-color: #141723e6;
+            height: 100%;
+        }
+        .close {
+            opacity: 1;
+            outline: none;
+            margin-right: 1rem;
+            margin-top: 1rem;
+        }
+        .menu-item-popup-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            .menu-item-info {
+                width: 100%;
+                h3 {
+                    font-family: $font04;
+                    font-size: 15px;
+                    color: #ffffff;
+                }
+                p {
+                    font-family: $font03;
+                    font-size: 13px;
+                    color: #fff;
+                }
+            }
+            .menu-item-price {
+                font-family: $font04;
+                font-size: 34.23px;
+                color: #bf9e7b;
+            }
+            .menu-item-img {
+                width: 100%;
+            }
+        }
+    }
+}
+.menu-item-popup-button {
+    text-align: left;
+    border: 0 !important;
+    background: none !important;
+    cursor: pointer;
+}

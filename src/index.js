@@ -6,8 +6,8 @@ import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import 'react-medium-image-zoom/dist/styles.css'
-
+import 'react-medium-image-zoom/dist/styles.css';
+import 'reactjs-popup/dist/index.css';
 
 ReactDOM.render(
   <React.StrictMode>
