@@ -2,7 +2,6 @@ import React from 'react';
 import { Container, Row } from 'react-bootstrap'
 import MenuItem from '../../MenuItem';
 import test from '../../../assets/img/menu/test.jpg'
-import test2 from '../../../assets/img/menu/test2.jpg'
 import '../../../App.scss';
 
 class FirstList extends React.Component {
@@ -15,7 +14,7 @@ class FirstList extends React.Component {
                     name: "ხაჭაპური იმერული (1 ცალი)",
                     description: "Pork stomach with wallnutss",
                     price: "3.50 ₾",
-                    image: test2
+                    image: test
                 },
                 {
                     id: 1,

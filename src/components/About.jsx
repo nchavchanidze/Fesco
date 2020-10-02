@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap'
-import aboutImg from '../assets/img/menu/test3.jpg'
+import aboutImg from '../assets/img/about/about-img.jpg'
 import Aos from 'aos';
 import '../App.scss';
 

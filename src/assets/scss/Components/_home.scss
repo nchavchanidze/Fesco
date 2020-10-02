@@ -1,18 +1,33 @@
 #home {
     background-color: rgb(65, 65, 65);
-    background-image: url(../../img/home/home-bg-test.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     height: 100vh;
     .bg-layer {
         background-color: rgba(0, 0, 0, 0.7);
         height: 100vh;
         }
 }
-.home-container {
+.home-container-1 {
     height: 100vh;
+    background-image: url(../../img/home/home-bg-test.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+.home-container-2 {
+    height: 100vh;
+    background-image: url(../../img/home/home-bg-test-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.home-container-3 {
+    height: 100vh;
+    background-image: url(../../img/home/home-bg-test-3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .HomeTextContainer {
     position: absolute;
     top: 50%;

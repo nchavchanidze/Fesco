@@ -81,7 +81,7 @@ class Footer extends React.Component {
                         <Col md={{ span: 4 }} className="mt-3">
                             <h3>{this.state.socials.title}</h3>
                             <div className="w-75 d-flex justify-content-between align-items center">
-                                <a href="/#" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.facebook.com/cafeteriatartan/" target="_blank" rel="noopener noreferrer">
                                     <FontAwesomeIcon style={iconStyle} className="footer-icons" icon={['fab', 'facebook-f']} />
                                 </a>
                                 <a href="/#" target="_blank" rel="noopener noreferrer">
@@ -90,7 +90,7 @@ class Footer extends React.Component {
                                 <a href="/#" target="_blank" rel="noopener noreferrer">
                                     <FontAwesomeIcon style={iconStyle} className="footer-icons" icon={['fab', 'google-plus-g']} />
                                 </a>
-                                <a href="/#" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.instagram.com/cafeteria_tartan/" target="_blank" rel="noopener noreferrer">
                                     <FontAwesomeIcon style={iconStyle} className="footer-icons" icon={['fab', 'instagram']} />
                                 </a>
                             </div>

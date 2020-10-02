@@ -21,8 +21,9 @@ class App extends React.Component {
       <div>
         <div>
           <MessengerCustomerChat
-            pageId="<PAGE_ID>"
-            appId="<APP_ID>"
+            pageId="100402898148885"
+            appId="337449571002468"
+            themeColor="#e22028"
           />
         </div>
         <Header />

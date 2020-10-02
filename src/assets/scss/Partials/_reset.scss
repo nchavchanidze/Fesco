@@ -156,6 +156,9 @@ button {
   padding: 0;
   outline: none;
   border-radius: 0;
+  &:focus {
+    outline: none !important;
+  }
 }
 
 button {

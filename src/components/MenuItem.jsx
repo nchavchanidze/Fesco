@@ -8,7 +8,7 @@ function MenuItem(props) {
     return (
         <div id="MenuItem" className="mt-3 p-2 col-md-4 col-sm-12">
             <div className="menu-item-img">
-                <Zoom overlayBgColorEnd="#141723" style={{ backgroundColor: '#212529' }}>
+                <Zoom overlayBgColorEnd="#141723" style={{ backgroundColor: '#212529' }} className="menu-zoom">
                     <img className="w-100" src={props.item.image} alt={props.item.name} />
                 </Zoom>
             </div>

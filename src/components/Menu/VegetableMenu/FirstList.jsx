@@ -1,7 +1,10 @@
 import React from 'react';
 import { Container, Row } from 'react-bootstrap'
 import MenuItem from '../../MenuItem';
-import test from '../../../assets/img/menu/test.jpg'
+import image from '../../../assets/img/menu/test.jpg'
+import image01 from '../../../assets/img/menu/Vegetable/IMG_9777-Edit.jpg'
+import image02 from '../../../assets/img/menu/Vegetable/IMG_9779-Edit.jpg'
+import image03 from '../../../assets/img/menu/Vegetable/IMG_9784-Edit.jpg'
 import '../../../App.scss';
 
 class FirstList extends React.Component {
@@ -12,184 +15,184 @@ class FirstList extends React.Component {
                 {
                     id: 0,
                     name: "სოკოს შილა-ფლავი",
-                    description: "Donec velit neque, auctor sit amet aliquam vel ullamcorper sit amet ligula.............................",
+                    description: "Donec velit neque",
                     price: "2.00₾",
-                    image: test
+                    image: image
                 },
                 {
                     id: 1,
                     name: "პრასი ნიგვზით",
-                    description: "Donec velit neque, auctor sit amet aliquam vel ullamcorper sit amet ligula.............................",
+                    description: "Donec velit neque",
                     price: "2.50₾",
-                    image: test
+                    image: image
                 },
                 {
                     id: 2,
                     name: "დაჭრილი ჭარხალი ნიგვზით",
-                    description: "Donec velit neque, auctor sit amet aliquam vel ullamcorper sit amet ligula.............................",
+                    description: "Donec velit neque",
                     price: "1.60₾",
-                    image: test
+                    image: image
                 },
                 {
                     id: 3,
                     name: "ისპანახის ფხალი ნიგვზით",
-                    description: "Donec velit neque, auctor sit amet aliquam vel ullamcorper sit amet ligula.............................",
+                    description: "Donec velit neque",
                     price: "2.50₾",
-                    image: test
+                    image: image02
                 },
                 {
                     id: 4,
                     name: "ისპანახი ზეთში შემწვარი",
-                    description: "Donec velit neque, auctor sit amet aliquam vel ullamcorper sit amet ligula.............................",
+                    description: "Donec velit neque",
                     price: "1.50₾",
-                    image: test
+                    image: image
                 },
                 {
                     id: 5,
                     name: "ყვავილოვანი კომბოსტო მაიონეზში",
-                    description: "Donec velit neque, auctor sit amet aliquam vel ullamcorper sit amet ligula.............................",
+                    description: "Donec velit neque",
                     price: "1.70₾",
-                    image: test
+                    image: image
                 },
                 {
                     id: 6,
                     name: "ყვავილოვანი კომბოსტო ბოსტნეულით",
-                    description: "Donec velit neque, auctor sit amet aliquam vel ullamcorper sit amet ligula.............................",
+                    description: "Donec velit neque",
                     price: "2.00₾",
-                    image: test
+                    image: image
                 },
                 {
                     id: 7,
                     name: "ბადრიჯანი ბულგარულით სუნელებში",
-                    description: "Donec velit neque, auctor sit amet aliquam vel ullamcorper sit amet ligula.............................",
+                    description: "Donec velit neque",
                     price: "2.00₾",
-                    image: test
+                    image: image
                 },
                 {
                     id: 8,
                     name: "ბადრიჯანი ნიგვზით და მაიონეზით",
-                    description: "Donec velit neque, auctor sit amet aliquam vel ullamcorper sit amet ligula.............................",
+                    description: "Donec velit neque",
                     price: "2.00₾",
-                    image: test
+                    image: image03
                 },
                 {
                     id: 9,
                     name: "ეკალა ნიგვზით",
-                    description: "Donec velit neque, auctor sit amet aliquam vel ullamcorper sit amet ligula.............................",
+                    description: "Donec velit neque",
                     price: "2.80₾",
-                    image: test
+                    image: image01
                 },
                 {
                     id: 10,
                     name: "ბულგარული ნიგვზით",
-                    description: "Donec velit neque, auctor sit amet aliquam vel ullamcorper sit amet ligula.............................",
+                    description: "Donec velit neque",
                     price: "2.80₾",
-                    image: test
+                    image: image
                 },
                 {
                     id: 11,
                     name: "ტოლმა სამარხვო(1 ცალი)",
-                    description: "Donec velit neque, auctor sit amet aliquam vel ullamcorper sit amet ligula.............................",
+                    description: "Donec velit neque",
                     price: "1.60₾",
-                    image: test
+                    image: image
                 },
                 {
                     id: 12,
                     name: "კოტლეტი სამარხვო (1 ცალი)",
-                    description: "Donec velit neque, auctor sit amet aliquam vel ullamcorper sit amet ligula.............................",
+                    description: "Donec velit neque",
                     price: "1.00₾",
-                    image: test
+                    image: image
                 },
                 {
                     id: 13,
                     name: "ბადრიჯანი ნიგვზით",
-                    description: "Donec velit neque, auctor sit amet aliquam vel ullamcorper sit amet ligula.............................",
+                    description: "Donec velit neque",
                     price: "2.50₾",
-                    image: test
+                    image: image
                 },
                 {
                     id: 14,
                     name: "მწვანე ლობიო ნიგვზით",
-                    description: "Donec velit neque, auctor sit amet aliquam vel ullamcorper sit amet ligula.............................",
+                    description: "Donec velit neque",
                     price: "2.50₾",
-                    image: test
+                    image: image
                 },
                 {
                     id: 15,
                     name: "წითელი ლობიო ნიგვზით",
-                    description: "Donec velit neque, auctor sit amet aliquam vel ullamcorper sit amet ligula.............................",
+                    description: "Donec velit neque",
                     price: "2.00₾",
-                    image: test
+                    image: image
                 },
                 {
                     id: 16,
                     name: "ლობიო ამოლესილი",
-                    description: "Donec velit neque, auctor sit amet aliquam vel ullamcorper sit amet ligula.............................",
+                    description: "Donec velit neque",
                     price: "1.20₾",
-                    image: test
+                    image: image
                 },
                 {
                     id: 17,
                     name: "ქამა სოკოს ჩაშუშული",
-                    description: "Donec velit neque, auctor sit amet aliquam vel ullamcorper sit amet ligula.............................",
+                    description: "Donec velit neque",
                     price: "2.30₾",
-                    image: test
+                    image: image
                 },
                 {
                     id: 18,
                     name: "ხის სოკოს ჩაშუშული",
-                    description: "Donec velit neque, auctor sit amet aliquam vel ullamcorper sit amet ligula.............................",
+                    description: "Donec velit neque",
                     price: "2.30₾",
-                    image: test
+                    image: image
                 },
                 {
                     id: 19,
                     name: "აჯაფსანდალი",
-                    description: "Donec velit neque, auctor sit amet aliquam vel ullamcorper sit amet ligula.............................",
+                    description: "Donec velit neque",
                     price: "2.00₾",
-                    image: test
+                    image: image
                 },
                 {
                     id: 20,
                     name: "უზბეკური ფლავი სამარხვო",
-                    description: "Donec velit neque, auctor sit amet aliquam vel ullamcorper sit amet ligula.............................",
+                    description: "Donec velit neque",
                     price: "1.80₾",
-                    image: test
+                    image: image
                 },
                 {
                     id: 21,
                     name: "კარტოფილის პიურე",
-                    description: "Donec velit neque, auctor sit amet aliquam vel ullamcorper sit amet ligula.............................",
+                    description: "Donec velit neque",
                     price: "0.70₾",
-                    image: test
+                    image: image
                 },
                 {
                     id: 22,
                     name: "ბოსტნეული მოთუშული ბროკოლით",
-                    description: "Donec velit neque, auctor sit amet aliquam vel ullamcorper sit amet ligula.............................",
+                    description: "Donec velit neque",
                     price: "2.00₾",
-                    image: test
+                    image: image
                 },
                 {
                     id: 23,
                     name: "ახალი კარტოფილი შემწვარი",
-                    description: "Donec velit neque, auctor sit amet aliquam vel ullamcorper sit amet ligula.............................",
+                    description: "Donec velit neque",
                     price: "1.60₾",
-                    image: test
+                    image: image
                 },
                 {
                     id: 24,
                     name: "ახალი კარტოფილი მოხარშული",
-                    description: "Donec velit neque, auctor sit amet aliquam vel ullamcorper sit amet ligula.............................",
+                    description: "Donec velit neque",
                     price: "1.20₾",
-                    image: test
+                    image: image
                 },
                 {
                     id: 25,
                     name: "ბაჟე",
-                    description: "Donec velit neque, auctor sit amet aliquam vel ullamcorper sit amet ligula.............................",
+                    description: "Donec velit neque",
                     price: "2.50₾",
-                    image: test
+                    image: image
                 },
 
             ]

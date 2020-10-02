@@ -8,6 +8,7 @@ import MenuVegetable from './Menu/VegetableMenu/MenuVegetable';
 import MenuChicken from './Menu/ChickenMenu/MenuChicken';
 import MenuFish from './Menu/FishMenu/MenuFish';
 import MenuBaked from './Menu/BakedMenu/MenuBaked';
+import MenuCake from './Menu/CakeMenu/MenuCake';
 import '../App.scss';
 
 class Menu extends React.Component {
@@ -61,6 +62,9 @@ class Menu extends React.Component {
                             </div>
                             <div>
                                 <MenuBaked />
+                            </div>
+                            <div>
+                                <MenuCake />
                             </div>
                         </Slider>
                     </div>

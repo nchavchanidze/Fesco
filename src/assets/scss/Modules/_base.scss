@@ -7,8 +7,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #bf9e7b;
+    background: $color01;
     &:hover {
-        background: #fabb78;
+        background: #ff0000;
     }
+}
+::selection {
+    background-color: $color01;
+    color: #fff;
 }
